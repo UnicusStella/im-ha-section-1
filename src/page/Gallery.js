@@ -23,7 +23,6 @@ function Gallery() {
             className="thumbnail"
             onClick={handleClick}
             onChange={handleClick}
-            defaultValue={images[0].src}
             src={images[0].src}
           ></img>
         </a>
@@ -32,7 +31,6 @@ function Gallery() {
             className="thumbnail"
             onClick={handleClick}
             onChange={handleClick}
-            defaultValue={images[1].src}
             src={images[1].src}
           ></img>
         </a>
@@ -41,7 +39,6 @@ function Gallery() {
             className="thumbnail"
             onClick={handleClick}
             onChange={handleClick}
-            defaultValue={images[2].src}
             src={images[2].src}
           ></img>
         </a>
