@@ -12,19 +12,17 @@ function Gallery() {
     // TODO.
     setChangeImage(image);
   };
-  const temp = (image) => {
-    return (
-      <a onClick={() => handleClick(image)}>
-        <Thumbnail source={image.src} />
-      </a>
-    );
-  };
+  const addThumbnail = (aab) => (
+    <a onClick={() => handleClick(aab)}>
+      <Thumbnail source={aab.src} />
+    </a>
+  );
   return (
     <div>
       <h2>전체 목록</h2>
       <div id="list" className="flex">
         {/* TODO */}
-        {images.map(temp)}
+        {images.map(addThumbnail)}
       </div>
       <div>
         {/* TODO: 아래 하드코딩된 내용 대신에, 목록 선택에 따른 이미지를 표시하세요 */}

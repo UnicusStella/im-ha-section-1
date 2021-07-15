@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import Thumbnail from './component/Thumbnail';
-import images from './data/images';
 import Gallery from './page/Gallery';
 import About from './page/About';
 

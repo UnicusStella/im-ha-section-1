@@ -1,7 +1,6 @@
-import images from '../data/images';
-
-function Thumbnail(props) {
-  return <img className="thumbnail" src={props.source}></img>;
-}
-
+const Thumbnail = ({ source }) => (
+  <>
+    <img className="thumbnail" src={source}></img>
+  </>
+);
 export default Thumbnail;
