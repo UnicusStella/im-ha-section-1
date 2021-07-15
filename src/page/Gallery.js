@@ -12,9 +12,9 @@ function Gallery() {
     // TODO.
     setChangeImage(image);
   };
-  const addThumbnail = (aab) => (
-    <a onClick={() => handleClick(aab)}>
-      <Thumbnail source={aab.src} />
+  const addThumbnail = (image) => (
+    <a onClick={() => handleClick(image)}>
+      <Thumbnail source={image.src} />
     </a>
   );
   return (
