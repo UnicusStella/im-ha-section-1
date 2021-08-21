@@ -1,7 +1,8 @@
-function Thumbnail({ source }) {
+function Thumbnail({ source, key }) {
   return (
     <>
       {/* TODO */}
+
       <img className="thumbnail" src={source}></img>
     </>
   );

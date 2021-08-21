@@ -12,16 +12,18 @@ function Gallery() {
     setimage(image);
   };
 
+  const addthumbnail = (image) => (
+    <a key={image.id} onClick={() => handleClick(image)}>
+      <Thumbnail source={image.src} />
+    </a>
+  );
+
   return (
     <div>
       <h2>전체 목록</h2>
       <div id="list" className="flex">
         {/* TODO */}
-        {images.map((img) => (
-          <a onClick={() => handleClick(img)}>
-            <Thumbnail source={img.src} key={img.id} />
-          </a>
-        ))}
+        {images.map(addthumbnail)}
       </div>
 
       <div>
