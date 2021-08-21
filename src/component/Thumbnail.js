@@ -2,9 +2,7 @@ function Thumbnail({ source }) {
   return (
     <>
       {/* TODO */}
-      {/* <img className="thumbnail" src={source} >
-        test
-      </img> */}
+      <img className="thumbnail" src={source}></img>
     </>
   );
 }
