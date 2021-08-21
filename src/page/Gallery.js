@@ -17,16 +17,11 @@ function Gallery() {
       <h2>전체 목록</h2>
       <div id="list" className="flex">
         {/* TODO */}
-        {images.map(
-          (img) => (
-            console.log(img),
-            (
-              <a>
-                <Thumbnail source={img.src} key={img.id} />
-              </a>
-            )
-          )
-        )}
+        {images.map((img) => (
+          <a onClick={() => handleClick(img)}>
+            <Thumbnail source={img.src} key={img.id} />
+          </a>
+        ))}
       </div>
 
       <div>
