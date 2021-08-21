@@ -28,7 +28,7 @@ function Gallery() {
 
       <div>
         {/* TODO: 아래 하드코딩된 내용 대신에, 목록 선택에 따른 이미지를 표시하세요 */}
-        <h2>이미지 제목</h2>
+        <h2>{image.alt}</h2>
         <img src={image.src} id={image.id} alt={image.alt} />
       </div>
     </div>
