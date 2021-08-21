@@ -1,6 +1,5 @@
-const Thumbnail = ({ source }) => (
-  <>
-    <img className="thumbnail" src={source}></img>
-  </>
-);
+function Thumbnail() {
+  return <>{/* TODO */}</>;
+}
+
 export default Thumbnail;
